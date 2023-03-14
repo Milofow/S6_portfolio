@@ -16,3 +16,4 @@
 
 
 running metatrader with x11 server for gui because metatrader needs it
+```ENV DISPLAY=host.docker.internal:0.0``` when addind this to the dockerfile it creates a window on the host machine (windows 10) when docker is run. You need to install a x server on the host machine (windows 10) like xming or xlaunch (only xlaunch worked for me).
