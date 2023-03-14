@@ -12,3 +12,7 @@
 
 ## Docker file settings needed
 ```DEBIAN_FRONTEND=noninteractive``` = some installations ask for options while installing like a location i.e. to use this tag before the installation command it skips these steps so the docker file can install it without waiting for the questions.
+
+
+
+running metatrader with x11 server for gui because metatrader needs it
