@@ -17,3 +17,10 @@
 
 running metatrader with x11 server for gui because metatrader needs it
 ```ENV DISPLAY=host.docker.internal:0.0``` when addind this to the dockerfile it creates a window on the host machine (windows 10) when docker is run. You need to install a x server on the host machine (windows 10) like xming or xlaunch (only xlaunch worked for me).
+
+
+x server is for mounting the virtual display in the docker to a real one when starting a program that requires a $DISPLAY then it automatically opens a window on the host running the x server.
+
+xvfb creates a virtual display in the container that is not connected to a physical one but therefore the programs that require it i.e. metatrader can start.
+
+```xvfb-run wine terminal.exe```
